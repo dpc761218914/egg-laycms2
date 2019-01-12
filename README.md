@@ -1,7 +1,31 @@
-# laycms2
+# egg+laycms2快速开发后台管理系统
 
+### laycms2.0静态纯前端工程：https://github.com/BrotherMa/layuicms2.0
 
+### 一、整合思路
+   1、在egg中新建一个“http://localhost:7001/”路由，渲染View下的index.html界面,而index.html页面是后台管理系统的首页，所有页面将以此页面为基础，页面跳转、左侧导航栏等。
 
+### 二、整合步骤
+   #### 2.1 egg添加依赖-添加html依赖、静态文件依赖
+   >"egg-view-ejs": "^2.0.0",  
+   >"egg-static": "^2.1.1"
+   #### 2.2 在config/config.default.js中进行如下配置
+   > config.view = {    
+   >    mapping: {'.html': 'ejs'} //左边写成.html后缀，会自动渲染.html文件   
+   >};   
+   >// static   
+   > config.static = {   
+   >    prefix: '/public/',   
+   > };  
+   ####  2.3 拷入layCMS2.0静态工程到egg项目的public中
+   > 完成了了2.2的配置后，访问“http://localhost:7001/public”将访问egg工程的public目录，因此所有引入了静态文件的位置加上/public/,包括JS、css、json静态文件配置，确保所有静态在文件可以正常引用。
+   
+   #### 2.4 此时已经可以启动项目，查看效果。
+   > 后续前后端数据交互，需要进行进行前后端开发，可以进行前后端分离开发，前端通过ajax调用API和后端进行交互。
+   > 具体请求实例可以参考工程：https://github.com/dpc761218914/company_website
+  
+  
+   
 ## QuickStart
 
 <!-- add docs here for user -->
