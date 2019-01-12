@@ -24,7 +24,7 @@
    > 后续前后端数据交互，需要进行进行前后端开发，可以进行前后端分离开发，前端通过ajax调用API和后端进行交互。
    > 具体请求实例可以参考工程：https://github.com/dpc761218914/company_website
   
-  
+
    
 ## QuickStart
 
@@ -55,3 +55,11 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+
+
+## 项目截图
+![QQ截图20190112144204.jpg](https://upload-images.jianshu.io/upload_images/2227968-09431af529a51272.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![QQ截图20190112144216.jpg](https://upload-images.jianshu.io/upload_images/2227968-ad0c369df71ae2b5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![QQ截图20190112144230.jpg](https://upload-images.jianshu.io/upload_images/2227968-63f8c2004e7f6cda.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
